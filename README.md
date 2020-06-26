@@ -1,7 +1,7 @@
-# Profile Portforio
+# Profile Portfolio
 
 ## Overview 
- In this project I'm aiming to create a portforio homepage to be hosted here on github.
+ In this project I'm aiming to create a portfolio homepage to be hosted here on github.
 
  This is still in early development state
 
