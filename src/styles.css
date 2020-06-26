@@ -135,6 +135,8 @@ header div a:hover {
   position: relative;
 }
 
+/*     ABOUT      */
+
 #content {
   display: flex;
 }
@@ -164,4 +166,60 @@ header div a:hover {
 
 #rocketseat {
   border-radius: 1000px;
+}
+
+/*       SKILLS      */
+
+.skills_title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.skills_title p {
+  font-size: 12px;
+  opacity: 0.7;
+  font-style: italic;
+  padding-bottom: 24px;
+}
+
+.skills {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.skill {
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.skill a {
+  text-decoration: initial;
+  color: var(--maintext-color);
+}
+
+.skill img {
+  width: 160px;
+}
+
+.skill .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--green-color);
+  color: var(--maintext-color);
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.skill:hover .tooltiptext {
+  visibility: visible;
 }
