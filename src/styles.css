@@ -189,6 +189,9 @@ header div a:hover {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 .skill {
@@ -204,14 +207,15 @@ header div a:hover {
 }
 
 .skill img {
-  width: 160px;
-}
-
-.skill-description-wrapper {
-  visibility: hidden;
+  width: 80%;
 }
 
 .skill-description {
+  display: none;
+}
+
+.skill-description.active {
+  display: contents;
 }
 
 .skill .tooltiptext {

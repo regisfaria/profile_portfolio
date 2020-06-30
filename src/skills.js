@@ -3,13 +3,19 @@ const skills = document.querySelectorAll('.skill');
 
 for (let skill of skills) {
   skill.addEventListener("click", function(){
-    modalOverlay.classList.add('active');
     const skillDescription = skill.querySelector('.skill-description');
-    modalOverlay.querySelector('.modal-content').appendChild(skillDescription);
+    const toAppend = skillDescription.cloneNode(true);
+
+    const modalContent = document.getElementById('modal-content');
+
+    modalContent.appendChild(toAppend).classList.add('active');
+    modalOverlay.classList.add('active');
   });
 }
 
 document.querySelector('.close-modal').addEventListener('click', function(){
-  modalOverlay.removeChild(modalOverlay.childNodes[0]);
+  const modalContent = document.getElementById('modal-content');
+  
   modalOverlay.classList.remove('active');
+  modalContent.removeChild(modalContent.firstElementChild);
 });
