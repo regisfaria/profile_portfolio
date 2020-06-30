@@ -212,10 +212,23 @@ header div a:hover {
 
 .skill-description {
   display: none;
+  font-size: 2vh;
 }
 
 .skill-description.active {
   display: contents;
+}
+
+#heart {
+  color: red;
+  font-size: 2vh;
+}
+
+#skill-description-icon {
+  justify-content: center;
+  padding-top: 0.8rem;
+  padding-bottom: 2rem;
+  width: 3rem;
 }
 
 .skill .tooltiptext {
@@ -272,7 +285,7 @@ header div a:hover {
 }
 
 .modal-content {
-  padding: 3rem;
   text-align: center;
-  font-size: 24px;
+  padding: 1.5rem;
+  font-size: 2vh;
 }
